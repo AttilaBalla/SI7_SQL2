@@ -6,7 +6,8 @@ def get_mentors_and_schools(cursor):
     cursor.execute(""" SELECT CONCAT (mentors.last_name, ' ', mentors.first_name) AS mentor_name,
                        schools.name AS school_name, schools.country AS school_country
                        FROM mentors
-                       LEFT JOIN schools ON mentors.id=schools.contact_person ORDER BY mentors.id """)
+                       INNER JOIN schools ON mentors.city=schools.city
+                       ORDER BY mentors.id """)
     return cursor.fetchall()
 
 
