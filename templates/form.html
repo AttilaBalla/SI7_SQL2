@@ -19,6 +19,9 @@
         </div>
         {% if data %}
             <table>
+                {%for header in headers%}
+                    <th>{{ header }}</th>
+                {% endfor %}
                 {% for row in data %}
                 <tr>
                     {% for key in order %}

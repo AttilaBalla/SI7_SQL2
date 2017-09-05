@@ -35,7 +35,15 @@ table {
     width: 95%;
 }
 
-table th, table td{
+table th {
+    border: 1px solid grey;
+    background-color: rgb(25,75,255);
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
+
+table td{
     border: 1px solid grey;
     text-align: left;
     padding: 8px;
@@ -60,3 +68,5 @@ table tr:nth-child(even) {
     background-color: rgb(25,75,255);
     color: white;
 }
+
+
