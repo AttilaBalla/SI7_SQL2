@@ -1,0 +1,62 @@
+body {
+    font-family:arial;
+    margin:0px;
+    padding:0px;
+    background-repeat:no-repeat;
+    background-color: rgb(180,180,180);
+    background-position:center top;
+
+}
+
+#maincontainer {
+    background-color: white;
+    margin: auto;
+    width: 80%;
+    border: solid grey;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 45px;
+    text-align: center;
+    
+}
+
+#linkbuttons {
+    width: 85%;
+    height: 60px;
+    margin: auto;
+}
+
+table {
+    background-color: white;
+    border: thin solid grey;
+    border-collapse: collapse;
+    margin: auto;
+    width: 95%;
+}
+
+table th, table td{
+    border: 1px solid grey;
+    text-align: left;
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+    background-color: rgb(235,235,235);
+}
+
+.linkbutton:link, .linkbutton:visited {
+    float: left;
+    color: black;
+    background-color: rgb(220,220,220);
+    text-decoration: None;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px grey;
+    margin: 0px 5px 0px 5px;
+}
+
+.linkbutton:hover, linkbutton:active {
+    background-color: rgb(25,75,255);
+    color: white;
+}

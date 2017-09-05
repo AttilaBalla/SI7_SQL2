@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Application process - SQL - level 2</title>
+    <link href="/static/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="maincontainer">
+        <h2>"Application Process" SQL SI week assignment</h2>
+        <div id="linkbuttons">
+            <a class="linkbutton" href="/mentors">Mentors and schools</a>
+            <a class="linkbutton" href="/all-school">All schools</a>
+            <a class="linkbutton" href="/mentors-by-country">Mentors based on country</a>
+            <a class="linkbutton" href="/contacts">Contacts</a>
+            <a class="linkbutton" href="/applicants">Recent applicants</a>
+            <a class="linkbutton" href="/applicants-and-mentors">Assigned applicants</a>
+        </div>
+        <div id="results">
+            <p><b>{{ title }}</b></p>
+        </div>
+        {% if data %}
+            <table>
+                {% for row in data %}
+                <tr>
+                    {% for key in order %}
+                <td> {{ row[key] }} </td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </table>
+        {% endif %}
+    </div>
+</body>
+</html>
